@@ -16,7 +16,7 @@
     "tsc": "tsc",
     "lint": "eslint . --ext .ts",
     "test": "jest --watch",
-    "ci": "tsc && yarn run lint && yarn run test && yarn run build"
+    "ci": "tsc && yarn run lint && yarn run jest"
   },
   "devDependencies": {
     "@babel/core": "^7.9.6",
