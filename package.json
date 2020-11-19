@@ -15,7 +15,8 @@
     "build-storybook": "build-storybook",
     "tsc": "tsc",
     "lint": "eslint . --ext .ts",
-    "test": "jest --watch"
+    "test": "jest --watch",
+    "ci": "tsc && yarn run lint && yarn run test && yarn run build"
   },
   "devDependencies": {
     "@babel/core": "^7.9.6",
@@ -54,8 +55,8 @@
     "regenerator-runtime": "^0.13.7",
     "typescript": "^4.0.5",
     "webpack": "^5.5.1"
-	},
-	"peerDependencies": {
+  },
+  "peerDependencies": {
     "@guardian/src-foundations": "^1.0.1",
     "emotion": "^10.0.27",
     "react": "^16.13.1",
