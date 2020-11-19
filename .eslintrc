@@ -1,13 +1,25 @@
 {
 	"root": true,
 	"env": {
-		"node": true
+		"node": true,
+		"jest": true,
+		"browser": true
 	},
-	"extends": "@guardian/eslint-config",
+	"extends": ["@guardian/eslint-config"],
 	"overrides": [
 		{
 			"files": ["*.ts", "*.tsx"],
-			"extends": "@guardian/eslint-config-typescript"
+			"extends": ["@guardian/eslint-config-typescript"]
+		},
+		{
+			"files": ["src/**/*.stories.tsx"],
+			"rules": {
+				"import/no-default-export": "off"
+			}
 		}
-	]
+	],
+	"parserOptions": {
+		"project": "./tsconfig.json",
+		"sourceType": "module"
+	}
 }
