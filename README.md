@@ -45,7 +45,7 @@ and then
 
 Manual publishing steps:
 
-1. Ensure your changes are on master
+1. Ensure your changes are on main
 2. Ensure you have an [Npm account](https://docs.npmjs.com/creating-and-publishing-scoped-public-packages) that is authorised for the Npm @guardian organisation
 3. `yarn build`
 4. `yarn publish` (enter new version number, eg. 1.0.1)
