@@ -2,7 +2,6 @@
 /** @jsx jsx */
 import { css, jsx } from '@emotion/core';
 import { Container } from '@guardian/src-layout';
-import React from 'react';
 import { Card } from './components/Card';
 import { newsletters } from './newsletters';
 
