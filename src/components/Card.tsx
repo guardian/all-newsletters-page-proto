@@ -2,6 +2,7 @@
 /** @jsx jsx */
 import { css, jsx } from '@emotion/core';
 import { Button } from '@guardian/src-button';
+import { height, width } from '@guardian/src-foundations/size';
 import { body, headline } from '@guardian/src-foundations/typography';
 import { TextInput } from '@guardian/src-text-input';
 import React, { useState } from 'react';
@@ -22,7 +23,7 @@ interface NewsletterSignUpProps {
 }
 
 const cardStyles = css`
-	width: 220px;
+	width: 300px;
 	border-width: 2px;
 `;
 
@@ -56,7 +57,7 @@ const NewsletterSignUp: React.FC<NewsletterSignUpProps> = ({
 			supporting="Your email has been pre-populated from your account"
 			width={30}
 			value={userEmail}
-			error={isValidEmail ? 'Please enter a valid email address' : ''}
+			error={isValidEmail ? '' : 'Please enter a valid email address'}
 			required
 		/>
 	) : (
