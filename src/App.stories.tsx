@@ -2,10 +2,10 @@ import React from 'react';
 import { App } from './App';
 
 export default {
-	title: 'App',
+	title: 'Newsletter Round Up Page',
 	component: App,
 };
 
-export const DefaultStory = (): JSX.Element => {
+export const NewsletterRoundUpStory = (): JSX.Element => {
 	return <App />;
 };
