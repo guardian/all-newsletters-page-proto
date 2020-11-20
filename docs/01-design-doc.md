@@ -6,6 +6,10 @@ The [newsletters round up page][] is currently underwhelming and doesn't do the 
 
 ## Goals and non-Goals
 
+-   Improve developer experience by using the right tool for the job (a frontend technology in this case).
+-   Improve user experience by making the all newsletters roundup page easier to use.
+-   Improve the design and flow of the page to reflect the product it is advertising.
+
 ## Design
 
 ### Basic building blocks
