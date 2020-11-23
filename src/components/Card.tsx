@@ -1,27 +1,43 @@
 // this comment tells babel to convert jsx to calls to a function called jsx instead of React.createElement
 /** @jsx jsx */
 import { css, jsx } from '@emotion/core';
+import { Checkbox } from '@guardian/src-checkbox';
+import type { Dispatch, SetStateAction } from 'react';
 import React from 'react';
-import type { Newsletter, User } from '../types';
+import type { Newsletter } from '../types';
 import { NewsletterInfo } from './NewsletterInfo';
-import { NewsletterSignUp } from './NewsletterSignUp';
 
 export interface CardProps {
 	newsletter: Newsletter;
-	user?: User;
+	onSelection: Dispatch<SetStateAction<Record<string, boolean>>>;
+	currentSelection: Record<string, boolean>;
 }
 
 const cardStyles = css`
-	width: 300px;
+	width: 200px;
 	border-width: 2px;
 `;
 
 export const Card: React.FC<CardProps> = ({
 	newsletter,
-	user = { loggedIn: false },
-}) => (
-	<div css={cardStyles}>
-		<NewsletterInfo newsletter={newsletter} />
-		<NewsletterSignUp newsletter={newsletter} user={user} />
-	</div>
-);
+	currentSelection,
+	onSelection,
+}) => {
+	const { listName } = newsletter;
+	return (
+		<div css={cardStyles}>
+			<NewsletterInfo newsletter={newsletter} />
+			<Checkbox
+				value={listName}
+				label={`Get me ${newsletter.frequency}`}
+				checked={currentSelection[listName]}
+				onChange={() => {
+					onSelection({
+						...currentSelection,
+						[listName]: !currentSelection[listName],
+					});
+				}}
+			/>
+		</div>
+	);
+};

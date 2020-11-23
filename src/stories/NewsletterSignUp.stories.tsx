@@ -1,15 +1,12 @@
 import React from 'react';
 import type { NewsletterSignUpProps } from '../components/NewsletterSignUp';
 import { NewsletterSignUp } from '../components/NewsletterSignUp';
-import { newsletters } from '../newsletters';
-import type { Newsletter, User } from '../types';
+import type { User } from '../types';
 
 export default {
 	title: 'Components/NewsletterSignUp',
 	component: NewsletterSignUp,
 };
-
-const { guardianTodayNewsletter } = newsletters;
 
 const loggedInUser: User = {
 	loggedIn: true,
@@ -22,14 +19,14 @@ const loggedOutUser: User = {
 
 export const NewsletterSignUpLoggedOut: React.FC<NewsletterSignUpProps> = () => (
 	<NewsletterSignUp
-		newsletter={guardianTodayNewsletter}
+		newsletters={['today-uk', 'today-us']}
 		user={loggedOutUser}
 	/>
 );
 
 export const NewsletterSignUpLoggedIn: React.FC<NewsletterSignUpProps> = () => (
 	<NewsletterSignUp
-		newsletter={guardianTodayNewsletter}
+		newsletters={['today-uk', 'today-us']}
 		user={loggedInUser}
 	/>
 );

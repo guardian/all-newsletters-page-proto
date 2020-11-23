@@ -2,22 +2,17 @@
 /** @jsx jsx */
 import { css, jsx } from '@emotion/core';
 import { Container } from '@guardian/src-layout';
-import { Card } from './components/Card';
+import { Page } from './components/Page';
 import { newsletters } from './newsletters';
 
-const { guardianTodayNewsletter } = newsletters;
-
-const containerStyles = css`
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-`;
+// const containerStyles = css`
+// 	display: flex;
+// 	flex-wrap: wrap;
+// 	justify-content: space-between;
+// `; css={containerStyles}
 
 export const App = (): JSX.Element => (
-	<Container css={containerStyles}>
-		<Card newsletter={guardianTodayNewsletter} />
-		<Card newsletter={guardianTodayNewsletter} />
-		<Card newsletter={guardianTodayNewsletter} />
-		<Card newsletter={guardianTodayNewsletter} />
+	<Container>
+		<Page newsletters={newsletters} />
 	</Container>
 );

@@ -1,25 +1,26 @@
 import React from 'react';
 import type { CardProps } from '../components/Card';
 import { Card } from '../components/Card';
-import { newsletters } from '../newsletters';
-import type { User } from '../types';
+import { initialState, newsletters } from '../newsletters';
 
 export default {
 	title: 'Components/Card',
 	component: Card,
 };
 
-const { guardianTodayNewsletter } = newsletters;
+const guardianTodayNewsletter = newsletters['News roundups'][0];
 
-const loggedInUser: User = {
-	loggedIn: true,
-	email: 'firstname.lastname@example.com',
-};
+// TODO : Get this story working by working out how state works for individual components
+// export const LoggedOut: React.FC<CardProps> = () => (
+// 	<Card
+// 		newsletter={guardianTodayNewsletter}
+// 		currentSelection={initialState}
+// 	/>
+// );
 
-export const LoggedOut: React.FC<CardProps> = () => (
-	<Card newsletter={guardianTodayNewsletter} />
-);
-
-export const LoggedIn: React.FC<CardProps> = () => (
-	<Card newsletter={guardianTodayNewsletter} user={loggedInUser} />
-);
+// export const LoggedIn: React.FC<CardProps> = () => (
+// 	<Card
+// 		newsletter={guardianTodayNewsletter}
+// 		currentSelection={initialState}
+// 	/>
+// );

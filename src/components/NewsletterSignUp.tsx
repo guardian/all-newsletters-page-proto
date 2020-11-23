@@ -10,13 +10,13 @@ const inputFieldStyles = css`
 `;
 
 export interface NewsletterSignUpProps {
-	newsletter: Newsletter;
+	newsletters: string[];
 	user: User;
 	enteredEmail?: string;
 }
 
 export const NewsletterSignUp: React.FC<NewsletterSignUpProps> = ({
-	newsletter,
+	newsletters,
 	user,
 	enteredEmail = '',
 }) => {
@@ -48,10 +48,7 @@ export const NewsletterSignUp: React.FC<NewsletterSignUpProps> = ({
 	return (
 		<form action="https://www.theguardian.com/email" method="post">
 			{emailField}
-			<input type="hidden" name="listName" value={newsletter.listName} />
-			<Button data-link-name={`Subscribe to ${newsletter.listName}`}>
-				Sign up
-			</Button>
+			<Button data-link-name={`Subscribe to newsletters`}>Sign up</Button>
 		</form>
 	);
 };

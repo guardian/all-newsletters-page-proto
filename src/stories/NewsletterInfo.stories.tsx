@@ -8,7 +8,7 @@ export default {
 	component: NewsletterInfo,
 };
 
-const { guardianTodayNewsletter } = newsletters;
+const guardianTodayNewsletter = newsletters['News roundups'][0];
 
 export const NewsletterWithoutImage: React.FC<NewsletterInfoProps> = () => (
 	<NewsletterInfo newsletter={guardianTodayNewsletter} />
