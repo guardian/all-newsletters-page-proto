@@ -16,7 +16,7 @@
     "tsc": "tsc",
     "lint": "eslint . --ext .ts",
     "test": "jest --watch",
-    "ci": "tsc && yarn run lint && yarn run jest"
+    "ci": "tsc && yarn run lint && yarn run jest --passWithNoTests"
   },
   "dependencies": {
     "@emotion/core": "^10.0.14",
