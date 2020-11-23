@@ -3,7 +3,8 @@
 ## Context and Scope
 
 The [newsletters round up page][] is currently underwhelming and doesn't do the best job of advertising our newsletters, reflecting the quality of the product or providing a good user experience. In the process of revamping this page, we should look at using more modern technologies for developing and rendering the page.
-`frontend` as a project is moving away from rendering more generally. IT therefore makes sense for this particular page to live elsewhere and there is a benefit in bringing the page in line with other modern Guardian projects that already use React.
+
+`frontend` as a project is moving away from rendering more generally. It therefore makes sense for this particular page to live elsewhere and there is a benefit in bringing the page in line with other modern Guardian projects that already use React.
 
 ## Goals and non-Goals
 
