@@ -25,7 +25,7 @@ export const Card: React.FC<CardProps> = ({
 }) => {
 	const { listName } = newsletter;
 	return (
-		<div css={cardStyles}>
+		<div css={cardStyles} data-testid="card">
 			<NewsletterInfo newsletter={newsletter} />
 			<Checkbox
 				value={listName}

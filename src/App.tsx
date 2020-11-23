@@ -12,7 +12,7 @@ import { newsletters } from './newsletters';
 // `; css={containerStyles}
 
 export const App = (): JSX.Element => (
-	<Container>
+	<Container data-testid="roundup-page">
 		<Page newsletters={newsletters} />
 	</Container>
 );

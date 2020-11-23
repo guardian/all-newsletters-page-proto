@@ -10,7 +10,9 @@ export interface SectionProps {
 }
 
 export const Section: React.FC<SectionProps> = ({ sectionName, children }) => (
-	<AccordionRow label={sectionName}>
-		<Tiles columns={2}>{children}</Tiles>
-	</AccordionRow>
+	<div data-testid="section">
+		<AccordionRow label={sectionName}>
+			<Tiles columns={2}>{children}</Tiles>
+		</AccordionRow>
+	</div>
 );
