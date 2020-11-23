@@ -2,13 +2,14 @@
 
 ## Context and Scope
 
-The [newsletters round up page][] is currently underwhelming and doesn't do the best job of advertising our newsletters, reflecting the quality of the product or providing a good user experience. In the process of revamping this page, we should look at using more modern technologies for developing and rendering the page. In particular, we want to bring the page in line with other modern Guardian projects by using React.
+The [newsletters round up page][] is currently underwhelming and doesn't do the best job of advertising our newsletters, reflecting the quality of the product or providing a good user experience. In the process of revamping this page, we should look at using more modern technologies for developing and rendering the page.
+`frontend` as a project is moving away from rendering more generally. IT therefore makes sense for this particular page to live elsewhere and there is a benefit in bringing the page in line with other modern Guardian projects that already use React.
 
 ## Goals and non-Goals
 
--   Improve developer experience by using the right tool for the job (a frontend technology in this case).
 -   Improve user experience by making the all newsletters roundup page easier to use.
 -   Improve the design and flow of the page to reflect the product it is advertising.
+-   Improve developer experience by using the right tool for the job (a frontend technology in this case).
 
 ## Design
 
@@ -24,7 +25,8 @@ The [newsletters round up page][] is currently underwhelming and doesn't do the 
 What needs holding in state and where does it need to be shared?
 
 -   The selected list of newsletters needs to be shared across the page.
--   Whether an email is valid or not will need holding in state as well
+-   Whether a user is signed in and their current newsletter subscriptions.
+-   Whether an email is valid or not will need holding in state as well, only in the sign in form.
 
 <!-- URL reference links -->
 
