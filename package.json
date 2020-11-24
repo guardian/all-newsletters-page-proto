@@ -21,12 +21,12 @@
   },
   "dependencies": {
     "@emotion/core": "^10.0.14",
-    "@guardian/src-accordion": "^2.7.0",
-    "@guardian/src-button": "^2.7.0",
-    "@guardian/src-checkbox": "^2.7.0",
-    "@guardian/src-foundations": "^2.7.0",
-    "@guardian/src-layout": "^2.7.0",
-    "@guardian/src-text-input": "^2.7.0",
+    "@guardian/src-accordion": "^2.7.1",
+    "@guardian/src-button": "^2.7.1",
+    "@guardian/src-checkbox": "^2.7.1",
+    "@guardian/src-foundations": "^2.7.1",
+    "@guardian/src-layout": "^2.7.1",
+    "@guardian/src-text-input": "^2.7.1",
     "react": "^16.13.1"
   },
   "devDependencies": {
