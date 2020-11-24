@@ -1,11 +1,10 @@
 // this comment tells babel to convert jsx to calls to a function called jsx instead of React.createElement
 /** @jsx jsx */
 import { css, jsx } from '@emotion/core';
-import { Accordion } from '@guardian/src-accordion';
+import { Accordion, AccordionRow } from '@guardian/src-accordion';
 import React, { useState } from 'react';
 import { initialState } from '../newsletters';
-import type { Newsletter, Newsletters, User } from '../types';
-import { Card } from './Card';
+import type { Newsletters, User } from '../types';
 import { Section } from './Section';
 
 export interface PageProps {
@@ -18,24 +17,17 @@ export const Page: React.FC<PageProps> = ({ newsletters }) => {
 	const [currentSelection, setCurrentSelection] = useState<
 		Record<string, boolean>
 	>(initialState);
-	const sections = Object.keys(newsletters).map((sectionName) => {
-		const cards = newsletters[sectionName].map((newsletter: Newsletter) => (
-			<Card
-				newsletter={newsletter}
-				currentSelection={currentSelection}
-				onSelection={setCurrentSelection}
-				key={newsletter.listName}
-			/>
-		));
-		return (
+	const sections = Object.keys(newsletters).map((sectionName) => (
+		<AccordionRow label={sectionName}>
 			<Section
 				sectionName={sectionName}
+				newsletters={newsletters}
+				currentSelection={currentSelection}
+				onSelection={setCurrentSelection}
 				key={sectionName.replace(' ', '-')}
-			>
-				{cards}
-			</Section>
-		);
-	});
+			/>
+		</AccordionRow>
+	));
 
 	return <Accordion hideToggleLabel={true}>{sections}</Accordion>;
 };
