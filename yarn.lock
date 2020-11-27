@@ -1238,21 +1238,21 @@
   resolved "https://registry.yarnpkg.com/@guardian/prettier/-/prettier-0.4.1.tgz#b1af81aa24723951892cd5f41f006609d2392380"
   integrity sha512-IfkXB6mvQURxGetGfdi/14nSuj+7VOyJ7seqSVPLHbjy0iFk0bJmumLzdtPZVbKxyzMvilbY0KGftEJAvCaMig==
 
-"@guardian/src-accordion@^2.7.0":
+"@guardian/src-accordion@^2.7.1":
   version "2.7.1"
   resolved "https://registry.yarnpkg.com/@guardian/src-accordion/-/src-accordion-2.7.1.tgz#da5a6081eaf6a566260139b607d9df95dfa60334"
   integrity sha512-c64iPA751CaUCHjyDw+2ItnCq+hcDmpMaCUJddv/MWGPALRLjxU4nZA4Zzp/YL57yYcbXJtoMLdHpZrwM5ObmA==
   dependencies:
     "@guardian/src-helpers" "^2.7.1"
 
-"@guardian/src-button@^2.7.0":
+"@guardian/src-button@^2.7.1":
   version "2.7.1"
   resolved "https://registry.yarnpkg.com/@guardian/src-button/-/src-button-2.7.1.tgz#088eb57732c10516eb111692c68813713176f08f"
   integrity sha512-LMj7NBEugdx69SwlYR3n91vjG8QXL42W0JXMVAHYja1/8eM7TwFlO8H11oPxBfqWdpniqj5q7KYtfHTJmSnVrw==
   dependencies:
     "@guardian/src-helpers" "^2.7.1"
 
-"@guardian/src-checkbox@^2.7.0":
+"@guardian/src-checkbox@^2.7.1":
   version "2.7.1"
   resolved "https://registry.yarnpkg.com/@guardian/src-checkbox/-/src-checkbox-2.7.1.tgz#2164e3676bd42492504150c92324d01209da7eb7"
   integrity sha512-tl897nNUEgb7tcSPlNV3dgdzFu1LizwkKQnlgZjLfY2YeiMZLbQTUnlH7dHDC93CEcoqeU8UfVpI9UfzOs4MGA==
@@ -1261,7 +1261,7 @@
     "@guardian/src-label" "^2.7.1"
     "@guardian/src-user-feedback" "^2.7.1"
 
-"@guardian/src-foundations@^2.7.0", "@guardian/src-foundations@^2.7.1":
+"@guardian/src-foundations@^2.7.1":
   version "2.7.1"
   resolved "https://registry.yarnpkg.com/@guardian/src-foundations/-/src-foundations-2.7.1.tgz#d245a5ebedd520bf3be1b10ff7c5a0b5962a0a03"
   integrity sha512-U0XVJWugB6vXoORZPcfvnISAhwaIM5/Pz5uGj628+OcqF3vwm0dBUt1UTesVqOsG7tVUQvGG/n96wXWjGwmVmQ==
@@ -1285,14 +1285,14 @@
   dependencies:
     "@guardian/src-helpers" "^2.7.1"
 
-"@guardian/src-layout@^2.7.0":
+"@guardian/src-layout@^2.7.1":
   version "2.7.1"
   resolved "https://registry.yarnpkg.com/@guardian/src-layout/-/src-layout-2.7.1.tgz#73a817df733fa7b5ee8301cd6992383303e9e519"
   integrity sha512-VkKSa+K0Fo8oy84oFRujMHOU0icZOo0UjvDZWNAZBXD9SqrEx2a5xasRYGoX6gYFW3Uw5yr3W9u6na1icKdViQ==
   dependencies:
     "@guardian/src-helpers" "^2.7.1"
 
-"@guardian/src-text-input@^2.7.0":
+"@guardian/src-text-input@^2.7.1":
   version "2.7.1"
   resolved "https://registry.yarnpkg.com/@guardian/src-text-input/-/src-text-input-2.7.1.tgz#34d742f5a87b15e04a6db2d44171dff9b5d87456"
   integrity sha512-TqHZIaRRAvDx4V/tuWlETUUI0jSzO0FR+Us0FwP6OMxf5oFJ1j+Vz5RnU/dtWUN0WSb4W/OxxDhsz3RMtsVJCw==

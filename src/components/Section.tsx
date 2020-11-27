@@ -31,7 +31,7 @@ export const Section: React.FC<SectionProps> = ({
 
 	return (
 		<div data-testid="section">
-			<Tiles columns={2}>{cards}</Tiles>;
+			<Tiles columns={3}>{cards}</Tiles>
 		</div>
 	);
 };

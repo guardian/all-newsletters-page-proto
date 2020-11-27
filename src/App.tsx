@@ -1,7 +1,5 @@
-// this comment tells babel to convert jsx to calls to a function called jsx instead of React.createElement
-/** @jsx jsx */
-import { css, jsx } from '@emotion/core';
 import { Container } from '@guardian/src-layout';
+import React from 'react';
 import { Page } from './components/Page';
 import { newsletters } from './newsletters';
 
@@ -11,7 +9,7 @@ import { newsletters } from './newsletters';
 // 	justify-content: space-between;
 // `; css={containerStyles}
 
-export const App = (): JSX.Element => (
+export const App: React.FC = () => (
 	<Container data-testid="roundup-page">
 		<Page newsletters={newsletters} />
 	</Container>

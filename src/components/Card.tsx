@@ -1,6 +1,4 @@
-// this comment tells babel to convert jsx to calls to a function called jsx instead of React.createElement
-/** @jsx jsx */
-import { css, jsx } from '@emotion/core';
+import { css } from '@emotion/core';
 import { Checkbox } from '@guardian/src-checkbox';
 import type { Dispatch, SetStateAction } from 'react';
 import React from 'react';
